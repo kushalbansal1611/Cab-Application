@@ -1,4 +1,4 @@
-package com.example.cab.controller;
+package com.example.cab.Controllers;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.cab.dto.Driver;
-import com.example.cab.dto.User;
-import com.example.cab.service.CabBookingService;
+import com.example.cab.Dtos.Driver;
+import com.example.cab.Dtos.User;
+import com.example.cab.Services.CabBookingService;
 
 @RestController
 @RequestMapping("/cab")

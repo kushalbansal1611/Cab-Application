@@ -1,8 +1,15 @@
-package com.example.cab.dto;
+package com.example.cab.Dtos;
 
 import java.util.Arrays;
 
 public class Driver {
+
+	private String name;
+	private String gender;
+	private int age;
+	private String vehicleDetails;
+	private double[] currentLocation;
+	private boolean available;
 
 	public Driver() {
 		super();
@@ -47,12 +54,6 @@ public class Driver {
 		return vehicleDetails;
 	}
 
-	@Override
-	public String toString() {
-		return "Driver [name=" + name + ", gender=" + gender + ", age=" + age + ", vehicleDetails=" + vehicleDetails
-				+ ", currentLocation=" + Arrays.toString(currentLocation) + ", available=" + available + "]";
-	}
-
 	public void setVehicleDetails(String vehicleDetails) {
 		this.vehicleDetails = vehicleDetails;
 	}
@@ -73,18 +74,9 @@ public class Driver {
 		this.available = available;
 	}
 
-	private String name;
-	private String gender;
-	private int age;
-	private String vehicleDetails;
-	private double[] currentLocation;
-	private boolean available;
-
-	public Driver(String name, String gender, int age, String vehicleDetails, double[] currentLocation) {
-		this.name = name;
-		this.gender = gender;
-		this.age = age;
-		this.vehicleDetails = vehicleDetails;
-		this.currentLocation = currentLocation;
+	@Override
+	public String toString() {
+		return "Driver [name=" + name + ", gender=" + gender + ", age=" + age + ", vehicleDetails=" + vehicleDetails
+				+ ", currentLocation=" + Arrays.toString(currentLocation) + ", available=" + available + "]";
 	}
 }

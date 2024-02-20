@@ -1,6 +1,10 @@
-package com.example.cab.dto;
+package com.example.cab.Dtos;
 
 public class User {
+	private String name;
+	private String gender;
+	private int age;
+
 	public User() {
 		super();
 	}
@@ -35,9 +39,4 @@ public class User {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
-	private String name;
-	private String gender;
-	private int age;
-
 }

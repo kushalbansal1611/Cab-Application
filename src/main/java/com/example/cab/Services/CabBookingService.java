@@ -1,4 +1,4 @@
-package com.example.cab.service;
+package com.example.cab.Services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.example.cab.dto.Driver;
-import com.example.cab.dto.User;
+import com.example.cab.Dtos.Driver;
+import com.example.cab.Dtos.User;
 
 @Service
 public class CabBookingService {
@@ -24,6 +24,10 @@ public class CabBookingService {
 
 	public List<Driver> getDrivers() {
 		return drivers;
+	}
+
+	public List<User> getUsers() {
+		return users;
 	}
 
 	public List<Driver> findRide(String username, double[] source, double[] destination) {
